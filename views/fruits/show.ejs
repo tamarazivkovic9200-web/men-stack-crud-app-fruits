@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link rel="stylesheet" href="/stylesheets/style.css" />
+
     <title><%=fruit.name%></title>
   </head>
   <body>
@@ -17,6 +19,18 @@
   <% } else { %>
     <p>This fruit is not ready to eat!</p>
   <% } %>
+
+   <!-- show.ejs -->
+
+ <body>
+   <div class="fruit-details">
+     <!-- show page content -->
+   </div>
+   <a class="fruits-index-link" href="/fruits">
+     <div class="index-link-text">Back to Fruits</div>
+   </a>
+ </body>
+
   
   <form action="/fruits/<%=fruit._id%>?_method=DELETE" method="POST">
   <button type="submit">Delete <%= fruit.name %></button>

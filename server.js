@@ -7,6 +7,7 @@ const Fruit = require('./models/fruit.js')
 const app = express()
 const methodOverride = require("method-override");
 const morgan = require("morgan");
+const path = require("path");
 
 
 //midleware pretvara kovertuje podatke iz  browsera ka serveru i obrnuto
@@ -14,6 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 mongoose.connect(process.env.MONGODB_URI);
 app.use(methodOverride("_method")); // new
 app.use(morgan("dev")); //new
+ app.use(express.static(path.join(__dirname, "public")));
 
 mongoose.connection.on("connected", () => {
     console.log(`Connected to MongoDB ${mongoose.connection.name}.`);

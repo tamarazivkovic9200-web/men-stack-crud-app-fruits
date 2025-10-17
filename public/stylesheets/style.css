@@ -1,0 +1,26 @@
+ @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+ .fruits-index-link {
+   text-decoration: none;
+ }
+
+ .index-link-text {
+   background-color: #f47b5b;
+   color: white;
+   font-size: 1.4em;
+   width: 10em;
+   padding: 5px 15px;
+   margin: 15px;
+   border-radius: 25px;
+   text-align: center;
+   box-shadow: 0 5px #ffbd59;
+ }
+
+ .index-link-text:hover {
+   background-color: #ffbd59;
+   box-shadow: 0 5px #f47b5b;
+ }
+
+ .index-link-text:active {
+   background-color: #f47b5b;
+   box-shadow: 0 2.5px #ffbd59;
+ }
