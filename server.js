@@ -8,6 +8,8 @@ const app = express()
 const methodOverride = require("method-override");
 const morgan = require("morgan");
 const path = require("path");
+const Fruit = require('../models/fruit');
+const fruitsCtrl = require('./controllers/fruits');
 
 
 //midleware pretvara kovertuje podatke iz  browsera ka serveru i obrnuto
